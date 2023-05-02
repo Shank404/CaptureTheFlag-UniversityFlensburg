@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="de.hsfl.team34.capturetheflag.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_joinFragment"
+            app:destination="@id/joinFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_createFragment"
+            app:destination="@id/createFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lobbyFragment"
+        android:name="de.hsfl.team34.capturetheflag.LobbyFragment"
+        android:label="fragment_lobby"
+        tools:layout="@layout/fragment_lobby" >
+        <action
+            android:id="@+id/action_lobbyFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_lobbyFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/joinFragment"
+        android:name="de.hsfl.team34.capturetheflag.JoinFragment"
+        android:label="fragment_join"
+        tools:layout="@layout/fragment_join" >
+        <action
+            android:id="@+id/action_joinFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_joinFragment_to_lobbyFragment"
+            app:destination="@id/lobbyFragment" />
+        <action
+            android:id="@+id/action_joinFragment_to_chooseTeamDialogFragment"
+            app:destination="@id/chooseTeamDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="de.hsfl.team34.capturetheflag.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createFragment"
+        android:name="de.hsfl.team34.capturetheflag.CreateFragment"
+        android:label="fragment_create"
+        tools:layout="@layout/fragment_create" >
+        <action
+            android:id="@+id/action_createFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_createFragment_to_lobbyFragment"
+            app:destination="@id/lobbyFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/chooseTeamDialogFragment"
+        android:name="de.hsfl.team34.capturetheflag.ChooseTeamDialogFragment"
+        android:label="fragment_choose_team_dialog"
+        tools:layout="@layout/fragment_choose_team_dialog" />
+    <action
+        android:id="@+id/action_chooseTeamDialogFragment_to_lobbyFragment"
+        app:destination="@id/lobbyFragment" />
+    <action
+        android:id="@+id/action_chooseTeamDialogFragment_to_joinFragment"
+        app:destination="@id/joinFragment" />
+</navigation>

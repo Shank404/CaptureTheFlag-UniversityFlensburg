@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">CaptureTheFlag</string>
+
+    <!-- Start -->
+    <string name="start_app_name">Capture the flag</string>
+    <string name="start_host_game">Host Game</string>
+    <string name="start_join_game">Join Game</string>
+
+    <!-- Create -->
+    <string name="create_map">Karte des Campus</string>
+    <string name="create_name">Name</string>
+    <string name="create_set_flag">Set Flag at Position</string>
+    <string name="create_create">Create Game</string>
+    <string name="create_cancel">Cancel</string>
+
+    <!-- Join -->
+    <string name="join_game_id">Game ID</string>
+    <string name="join_name">Name</string>
+    <string name="join_join">Join Game</string>
+    <string name="join_cancel">Cancel</string>
+
+    <!-- Lobby -->
+    <string name="lobby_recv_players">Mitspielende Personen</string>
+    <string name="lobby_game_id">Game ID</string>
+    <string name="lobby_start">Start Game</string>
+    <string name="lobby_leave">Leave</string>
+
+    <!-- Game -->
+    <string name="game_map_name">Karte des Campus</string>
+    <string name="game_leave">Leave</string>
+
+    <string name="bitte_namen_eingeben">Bitte Namen eingeben...</string>
+    <string name="chooseTeam">Suchen sie ein Team aus.</string>
+    <string name="join">join</string>
+    <string name="cancel">cancel</string>
+    <string name="hello_blank_fragment">NANANANA</string>
+    <string name="snackbar_text">Are you sure you want to quit ?</string>
+    <string name="snackbar_quit">Yes</string>
+
+</resources>

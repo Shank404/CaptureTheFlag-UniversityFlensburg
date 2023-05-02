@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="chooseTeamArray">
+        <item>Automatische Teamauswahl</item>
+        <item>Team Rot</item>
+        <item>Team Blau</item>
+    </string-array>
+</resources>
